@@ -19,6 +19,33 @@
         <Label Content="Enter A Number" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="18"/>
         <TextBlock x:Name="Number" Grid.Column="1" HorizontalAlignment="Center" Margin="170,64,0,0" Text="#" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="24"/>
         <TextBox x:Name="numberTextBox" HorizontalAlignment="Left" Margin="10,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0" TextChanged="numberTextBox_TextChanged" PreviewTextInput="numberTextBox_PreviewTextInput" FontSize="18"/>
+        <RadioButton Content="1" HorizontalAlignment="Left" Margin="200,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="2" HorizontalAlignment="Left" Margin="240,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="3" HorizontalAlignment="Left" Margin="285,49,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="4" HorizontalAlignment="Left" Margin="200,82,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.275,0.649"/>
+        <RadioButton Content="5" HorizontalAlignment="Left" Margin="240,82,0,0" VerticalAlignment="Top"/>
+        <RadioButton Content="6" HorizontalAlignment="Left" Margin="285,82,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="myListBox" Grid.Row="1" Margin="10,10,10,10">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ListBox>
+        <ComboBox x:Name="readOnlyComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ComboBox>
+        <ComboBox x:Name="editableComboBox" Grid.Column="1" HorizontalAlignment="Left" Margin="270,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="120" IsEditable="True">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ComboBox>
 
     </Grid>
 </Window>
